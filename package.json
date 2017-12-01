@@ -1,0 +1,61 @@
+{
+  "name": "next-boilerplate-basic",
+  "version": "1.0.0",
+  "description": "Basic frontend-only template for next.js project. Counts with possibility to export to static files.",
+  "scripts": {
+    "dev": "next",
+    "build": "next build",
+    "start": "next start",
+    "export": "next build && next export",
+    "generate-sass-theme-variables": "node utils/json-to-sass-config-vars.js",
+    "start-dev": "npm run generate-sass-theme-variables && npm run dev",
+    "analyze": "SET \"ANALYZE=1\" && next build",
+    "eslint": "node node_modules/eslint/bin/eslint.js ./**/*.js",
+    "sass-lint": "sass-lint -v -q",
+    "flow": "flow",
+    "test": "jest"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@bitbucket.org/elliason/basic-frontend-next-boilerplate.git"
+  },
+  "keywords": [
+    "boilerplate",
+    "next.js",
+    "react.js"
+  ],
+  "author": "Elias Ondrej",
+  "license": "ISC",
+  "homepage": "https://bitbucket.org/elliason/basic-frontend-next-boilerplate#readme",
+  "dependencies": {
+    "autoprefixer": "^7.1.6",
+    "babel-cli": "^6.26.0",
+    "babel-plugin-module-resolver": "^3.0.0",
+    "babel-plugin-transform-decorators-legacy": "^1.3.4",
+    "babel-plugin-transform-flow-strip-types": "^6.22.0",
+    "babel-plugin-wrap-in-js": "^1.1.1",
+    "babel-preset-flow": "^6.23.0",
+    "glob": "^7.1.2",
+    "json-sass": "^1.3.5",
+    "lodash": "^4.17.4",
+    "next": "^4.1.4",
+    "node-sass": "^4.7.2",
+    "postcss-easy-import": "^3.0.0",
+    "postcss-loader": "^2.0.9",
+    "raw-loader": "^0.5.1",
+    "react": "^16.2.0",
+    "react-dom": "^16.2.0",
+    "sass-loader": "^6.0.6",
+    "styled-jsx": "^2.2.1",
+    "webpack-bundle-analyzer": "^2.9.1"
+  },
+  "devDependencies": {
+    "babel-eslint": "^8.0.3",
+    "eslint": "^4.12.1",
+    "eslint-plugin-flowtype": "^2.39.1",
+    "eslint-plugin-react": "^7.5.1",
+    "flow-bin": "^0.60.0",
+    "jest": "^21.2.1",
+    "sass-lint": "^1.12.1"
+  }
+}

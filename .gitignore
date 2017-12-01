@@ -1,0 +1,11 @@
+### Next template
+node_modules
+.next
+
+## output folder of next.js
+out
+
+## config vars artefact generated from json config file
+styles/theme-config.scss
+
+.idea/

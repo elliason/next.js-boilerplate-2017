@@ -1,0 +1,18 @@
+[ignore]
+.*/node_modules/.*
+.*/out/.*
+.*/.next/.*
+
+[include]
+
+[libs]
+types/
+
+[options]
+module.name_mapper='^components\/\(.*\)$' -> '<PROJECT_ROOT>/components/\1'
+module.name_mapper='^styles\/\(.*\)$' -> '<PROJECT_ROOT>/styles/\1'
+module.file_ext=.js
+module.file_ext=.json
+module.file_ext=.jsx
+module.file_ext=.css
+module.file_ext=.scss

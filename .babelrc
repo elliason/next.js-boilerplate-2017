@@ -1,0 +1,37 @@
+{
+  "plugins": [
+    [
+      "module-resolver", {
+      "root": ["."],
+      "alias": {
+        "styles": "./styles",
+        "components": "./components"
+      },
+      "cwd": "babelrc"
+    }],
+    [
+      "wrap-in-js",
+      {
+        "extensions": ["css$", "scss$"]
+      }
+    ],
+    [
+      "transform-flow-strip-types"
+    ],
+    [
+      "transform-decorators-legacy"
+    ]
+  ],
+  "presets": [
+    "next/babel"
+  ],
+  "ignore": [],
+  "env": {
+    "test": {
+      "presets": [
+        ["env", { "modules": "commonjs" }],
+        "next/babel"
+      ]
+    }
+  }
+}
