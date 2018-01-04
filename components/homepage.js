@@ -2,7 +2,8 @@ import React, { Component } from 'react';
 import { translate } from 'react-i18next';
 
 import Layout from 'components/layout/layout';
-import LanguageSwitch from 'components/languageSwitch';
+import LanguageSwitch from 'components/languageSwitch/languageSwitch';
+import Counter from 'components/counter/counter';
 
 class Homepage extends Component<Props> {
   render() {
@@ -14,6 +15,7 @@ class Homepage extends Component<Props> {
         <p> { t('introTexts.text1') } </p>
         <p> { t('introTexts.text2') } </p>
 
+        <Counter />
         <LanguageSwitch switchLanguage={switchLanguage} language={language} />
         <img src="../static/img/timothy_doggo.jpg" />
       </Layout>
