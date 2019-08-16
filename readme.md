@@ -1,5 +1,10 @@
 # Next.js basic frontend boilerplate
 
+Start development mode with
+```
+npm run start-dev
+```
+
 ## Project Layout
 
 | Folder | Description |
@@ -45,7 +50,7 @@ Instead of using complex relative paths like:
  ```
  import lib from '../../../../utils/my-utils/lib'
 ```
-you can write 
+you can write
 ```
 import lib from 'utils/my-utils/lib'
 ```
