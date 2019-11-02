@@ -47,7 +47,7 @@
     "react-dom": "^16.3.2",
     "sass-loader": "^6.0.7",
     "styled-jsx": "^2.2.6",
-    "webpack-bundle-analyzer": "^2.11.1"
+    "webpack-bundle-analyzer": "^3.6.0"
   },
   "devDependencies": {
     "babel-eslint": "^8.0.3",
